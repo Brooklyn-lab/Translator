@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Translator/static/css/main.98b15d67.css",
-    "main.js": "/Translator/static/js/main.6347423b.js",
-    "static/media/user-photo.jpg": "/Translator/static/media/user-photo.9215515261e4c4c6fadb.jpg",
-    "static/media/delete-basket.svg": "/Translator/static/media/delete-basket.132e885a53e489996956aeb84623cdb1.svg",
-    "index.html": "/Translator/index.html",
-    "static/media/reset-btn.svg": "/Translator/static/media/reset-btn.7d1b45f38a45e54c87db9d306137ac64.svg",
-    "main.98b15d67.css.map": "/Translator/static/css/main.98b15d67.css.map",
-    "main.6347423b.js.map": "/Translator/static/js/main.6347423b.js.map"
+    "main.css": "/translator/static/css/main.98b15d67.css",
+    "main.js": "/translator/static/js/main.c7b498ce.js",
+    "static/media/user-photo.jpg": "/translator/static/media/user-photo.9215515261e4c4c6fadb.jpg",
+    "static/media/delete-basket.svg": "/translator/static/media/delete-basket.132e885a53e489996956aeb84623cdb1.svg",
+    "index.html": "/translator/index.html",
+    "static/media/reset-btn.svg": "/translator/static/media/reset-btn.7d1b45f38a45e54c87db9d306137ac64.svg",
+    "main.98b15d67.css.map": "/translator/static/css/main.98b15d67.css.map",
+    "main.c7b498ce.js.map": "/translator/static/js/main.c7b498ce.js.map"
   },
   "entrypoints": [
     "static/css/main.98b15d67.css",
-    "static/js/main.6347423b.js"
+    "static/js/main.c7b498ce.js"
   ]
 }
