@@ -1,0 +1,13 @@
+.words {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+
+  &__item {
+    font-size: 32px;
+
+    @media screen and (max-width: 576px) {
+      font-size: 18px;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+.current-name {
+  text-align: center;
+  font-size: 51px;
+  line-height: 1.5;
+}
+
+.answers {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  gap: 25px 30px;
+  max-width: 750px;
+  margin: 50px auto 0;
+
+  @media screen and (max-width: 768px){
+    gap: 20px;
+  }
+}
+
+.answers__button {
+  padding: 25px 10px;
+  border: 1px solid var(--main-color);
+  border-radius: 12px;
+  background: transparent;
+  font-size: 21px;
+  cursor: pointer;
+  color: inherit;
+
+  @media screen and (min-width: 768px){
+    padding: 25px 10px;
+    font-size: 31px;
+  }
+}

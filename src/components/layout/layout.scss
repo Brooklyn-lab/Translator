@@ -1,0 +1,11 @@
+.main-wrapper {
+  position: relative;
+  background-color: var(--content-wrapper-color);
+  color: var(--content-text-color);
+  border-radius: 12px;
+  padding: 50px;
+
+  @media screen and (max-width: 768px){
+    padding: 50px 20px;
+  }
+}
