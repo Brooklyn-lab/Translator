@@ -1,8 +1,8 @@
 export enum ROUTES {
-  Home = "/",
-  NewWords = "/new-words",
-  Test = "/test",
-  Results = "/results",
+  Home = "/translator/",
+  NewWords = "/translator/new-words",
+  Test = "/translator/test",
+  Results = "/translator/results",
 }
 
 export enum STORAGENAME {
