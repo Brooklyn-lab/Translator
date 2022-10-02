@@ -1,6 +1,6 @@
 {
   "name": "translator",
-  "homepage": "https://brooklyn-lab.github.io/Translator/",
+  "homepage": "https://brooklyn-lab.github.io/translator/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
