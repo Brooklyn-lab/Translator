@@ -1,9 +1,10 @@
 import { useEffect, useState } from 'react';
-import { useAppDispatch, useAppSelector } from '../../store/store'
+import { useAppDispatch, useAppSelector } from '../../store/store';
 import { NavLink } from 'react-router-dom';
-import { getWordsListFromLocalStorage } from '../../store/translator/translatorSlice';
-import { ROUTES } from '../../constants';
+import { addWordsListToLocalStorage, getWordsListFromLocalStorage, addNewWords } from '../../store/translator/translatorSlice';
+import { ROUTES, WORDLIST } from '../../constants';
 import { getAllPropValues } from '../../utils/utils';
+import addBtn from "../../assets/images/add-btn.svg";
 import "./word-list.scss";
 
 function WordsList(): JSX.Element {
@@ -11,6 +12,13 @@ function WordsList(): JSX.Element {
   const { words } = useAppSelector(({ translator }) => translator);
   const [enWordsList, setEnWordsList] = useState<string[]>([]);
   const [ukWordsList, setUkWordsList] = useState<string[]>([]);
+
+  const addTestWordsList = () => {
+    WORDLIST.forEach((listItem) => {
+      dispatch(addNewWords(listItem));
+    });
+    dispatch(addWordsListToLocalStorage());
+  };
   
   useEffect(() => {
     dispatch(getWordsListFromLocalStorage());
@@ -33,7 +41,14 @@ function WordsList(): JSX.Element {
           </ul>
         </div>)
         :
-        (<NavLink to={ROUTES.NewWords}>Поки немає слів. Додай нові слова і починай вивчати.</NavLink>)
+        (
+          <>
+            <NavLink to={ROUTES.NewWords}>Поки немає слів. Додай нові слова і починай вивчати. Або натисни додати в правому кутку, додай відразу 10 слів і починай тест одразу.</NavLink>
+            <button className="reset-btn" onClick={addTestWordsList}>
+              <img className="reset-btn__icon" src={addBtn} alt='Add button'/>
+            </button>
+          </>
+        )
       }
     </>
   );
